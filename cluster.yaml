@@ -1,9 +1,21 @@
 __default__:
-  cpu: "1" 
-  mem: "4"
-  image: "swr.cn-east-2.myhuaweicloud.com/oedocker/micro_16s:v1.0"
+  cpu: "1"  # 自行调整所需的 CPU
+  mem: "4"  # 自行调整所需的 内存
+  image: "swr.cn-east-2.myhuaweicloud.com/oedocker/micro_16s:v1.0"  # 根据不同 rule 要求 打开不同的 镜像
   namespace: "k8s-dna"
-  custom_prop: "zfxsdcjdrw"
+  custom_prop: "zfxsdcjdrw"  # 可自定义镜像前缀
   activeDeadlineSeconds: "108000"
 
-#
+# 所有 镜像ID
+# image: swr.cn-east-2.myhuaweicloud.com/oedocker/2bm_abd:v1.0
+# image: swr.cn-east-2.myhuaweicloud.com/oedocker/2brad:v20230626
+# image: swr.cn-east-2.myhuaweicloud.com/oedocker/drna_rpt:v1.0
+# image: swr.cn-east-2.myhuaweicloud.com/oedocker/drna_rpt:v1.1.1
+# image: swr.cn-east-2.myhuaweicloud.com/oedocker/micro_16s:v1.0
+# image: swr.cn-east-2.myhuaweicloud.com/oedocker/micro_16s:v1.1
+# image: swr.cn-east-2.myhuaweicloud.com/oedocker/oeqc_dna:v1.0
+# image: swr.cn-east-2.myhuaweicloud.com/oedocker/oeqc_rna:v1.0
+# image: swr.cn-east-2.myhuaweicloud.com/oedocker/blast-2.13.0:v1.0
+# image: "swr.cn-east-2.myhuaweicloud.com/oedocker/oe_cancer_dna:v1.0"
+# image: "swr.cn-east-2.myhuaweicloud.com/oedocker/oeqc_dna:v1.0"
+# image: "swr.cn-east-2.myhuaweicloud.com/oedocker/oe_reseq_dna:v1.0"
