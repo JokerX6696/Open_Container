@@ -26,3 +26,7 @@ rule open_container:
 #     fi
 #     kubectl exec -it ${dockerid} -n k8s-dna sh;
 # }
+
+# 2023-10-23-14-00-zfxsdcjdrw-hhajb-5kpdv                       0/1     Completed   0          7m57s
+# 2023-10-23-14-02-zfxsdcjdrw-eigedhf-95cwj                     1/1     Running     0          5m48s
+# 例如 rundocker 2023-10-23-14-02-zfxsdcjdrw-eigedhf-95cwj
