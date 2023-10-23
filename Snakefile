@@ -16,3 +16,13 @@ rule open_container:
         sleep 600  # 这里可以手动修改需要镜像停留的时间，防止跑一半镜像关闭
         echo '如果要重新开启镜像，请删除本文件' > {output.closed_file} 2>{log.e}
         """
+
+# # 操作 docker 可以通过该函数 + 容器ID 进入该 container
+# rundocker() {
+#     if [ -z "$1" ]; then
+#         dockerid=$(kubectl get pods -n k8s-dna|awk '{if($3=="Running"){print$1}}'|tail -n 1)
+#     else
+#         dockerid=$1
+#     fi
+#     kubectl exec -it ${dockerid} -n k8s-dna sh;
+# }
