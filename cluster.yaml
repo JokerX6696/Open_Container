@@ -1,0 +1,9 @@
+__default__:
+  cpu: "1" 
+  mem: "4"
+  image: "swr.cn-east-2.myhuaweicloud.com/oedocker/micro_16s:v1.0"
+  namespace: "k8s-dna"
+  custom_prop: "zfxsdcjdrw"
+  activeDeadlineSeconds: "108000"
+
+#
