@@ -14,6 +14,6 @@ rule open_container:
         host = ''
     shell:
         """
-        sleep 600
+        sleep 600  # 这里可以手动修改需要镜像停留的时间，防止跑一半镜像关闭
         touch {output.closed_file}
         """
