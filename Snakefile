@@ -14,5 +14,5 @@ rule open_container:
     shell:
         """
         sleep 600  # 这里可以手动修改需要镜像停留的时间，防止跑一半镜像关闭
-        echo 'container closed' > {output.closed_file} 2>{log.e}
+        echo '如果要重新开启镜像，请删除本文件' > {output.closed_file} 2>{log.e}
         """
